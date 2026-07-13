@@ -64,8 +64,8 @@ h1{font-size:clamp(56px,7.4vw,126px);font-weight:800;letter-spacing:-.04em;line-
 h2{font-size:clamp(36px,4.3vw,68px);font-weight:800;letter-spacing:-.035em;line-height:1.08}
 h3{font-size:clamp(18px,1.5vw,24px);font-weight:700;letter-spacing:-.02em}
 .kicker{font-size:clamp(14px,1.1vw,17px);font-weight:700;letter-spacing:.24em;color:var(--red)}
-.lead{font-size:clamp(16px,1.35vw,21px);color:rgba(242,244,236,.82);line-height:1.6}
-.small{font-size:13px;color:var(--mut)}
+.lead{font-size:clamp(17px,1.4vw,22px);color:rgba(242,244,236,.82);line-height:1.6}
+.small{font-size:14.5px;color:var(--mut)}
 
 .cta{display:inline-block;background:var(--paper);color:#14161d;font-weight:700;font-size:16px;padding:16px 36px;border-radius:var(--r);transition:transform .18s ease}
 .cta:hover{transform:translateY(-2px)}
@@ -155,9 +155,9 @@ blockquote.bigq .who{display:block;margin-top:12px;font-size:14px;font-weight:40
 /* work glass grid */
 .wgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:42px;max-width:1240px}
 .wgrid div{background:rgba(20,22,29,.6);border:1px solid rgba(242,244,236,.2);border-radius:var(--r);padding:20px 24px;backdrop-filter:blur(10px)}
-.wgrid h3{font-size:clamp(16px,1.3vw,20px);color:var(--paper);margin-bottom:4px}
-.wgrid p{font-size:13.5px;color:rgba(242,244,236,.75)}
-.wgrid .ex{margin-top:8px;font-size:12px;color:#aecdf0}
+.wgrid h3{font-size:clamp(18px,1.4vw,23px);color:var(--paper);margin-bottom:4px}
+.wgrid p{font-size:clamp(15px,1.15vw,17px);color:rgba(242,244,236,.75)}
+.wgrid .ex{margin-top:8px;font-size:14px;color:#aecdf0}
 @media (max-width:1100px){ .wgrid{grid-template-columns:1fr 1fr} }
 @media (max-width:720px){ .wgrid{grid-template-columns:1fr} }
 
@@ -176,7 +176,7 @@ blockquote.bigq .who{display:block;margin-top:12px;font-size:14px;font-weight:40
 .steps{margin-top:26px;list-style:none;counter-reset:s;max-width:620px}
 .steps li{counter-increment:s;display:flex;gap:16px;padding:clamp(9px,1.4dvh,14px) 0;font-size:clamp(15px,1.25vw,19px);color:rgba(242,244,236,.85);align-items:flex-start}
 .steps li::before{content:counter(s);flex:0 0 30px;height:30px;border-radius:50%;background:var(--blue);color:#0a0b0f;font-size:14px;font-weight:800;display:flex;align-items:center;justify-content:center;margin-top:1px}
-.prep{margin-top:20px;font-size:clamp(13px,1.05vw,15px);color:rgba(242,244,236,.65);max-width:52ch}
+.prep{margin-top:20px;font-size:clamp(15px,1.1vw,17px);color:rgba(242,244,236,.65);max-width:52ch}
 .prep em{font-style:normal;color:#f0b3b6}
 
 /* split (case 2 layout) */
@@ -200,9 +200,9 @@ blockquote.bigq .who{display:block;margin-top:12px;font-size:14px;font-weight:40
 
 /* hints */
 .hints{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:44px}
-.hints div{background:rgba(20,22,29,.6);border:1px solid rgba(242,244,236,.22);border-radius:var(--r);padding:18px 20px;backdrop-filter:blur(8px)}
-.hints b{display:block;color:var(--paper);font-size:clamp(15px,1.25vw,19px);margin-bottom:4px}
-.hints span{font-size:12.5px;color:rgba(242,244,236,.7)}
+.hints div{background:rgba(20,22,29,.6);border:1px solid rgba(242,244,236,.22);border-radius:var(--r);padding:22px 24px;backdrop-filter:blur(8px)}
+.hints b{display:block;color:var(--paper);font-size:clamp(17px,1.5vw,22px);margin-bottom:4px}
+.hints span{font-size:clamp(15px,1.2vw,18px);color:rgba(242,244,236,.7)}
 @media (max-width:1100px){ .hints{grid-template-columns:1fr 1fr} }
 
 /* sources */
@@ -239,6 +239,18 @@ blockquote.bigq .who{display:block;margin-top:12px;font-size:14px;font-weight:40
   .aflow.rv{transition-delay:1.65s}
   .nextch.rv{transition-delay:1.85s}
 }
+
+/* 5-block scenes */
+.blkno{font-size:clamp(40px,4vw,66px);font-weight:800;color:var(--red);line-height:1}
+.blkname{font-size:clamp(30px,3.2vw,50px);font-weight:800;color:var(--paper);letter-spacing:-.03em;margin:6px 0 14px}
+.blkq{font-size:clamp(16px,1.4vw,21px);font-weight:700;color:var(--blue);letter-spacing:.02em}
+.blkdef{font-size:clamp(17px,1.5vw,23px);color:rgba(242,244,236,.9);line-height:1.6;max-width:42ch;margin-top:10px}
+.bgpair{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,44px);margin-top:30px;max-width:1080px}
+.bgpair .bad,.bgpair .good{border-radius:var(--r);padding:22px 26px;border:1px solid var(--line)}
+.bgpair .good{background:rgba(91,143,199,.12);border-color:rgba(91,143,199,.5)}
+.bgpair .lbl{font-size:14px;font-weight:800;letter-spacing:.1em;margin-bottom:8px}
+.bgpair p{font-size:clamp(15px,1.3vw,19px);line-height:1.55;color:rgba(242,244,236,.9)}
+@media(max-width:860px){.bgpair{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -284,20 +296,84 @@ blockquote.bigq .who{display:block;margin-top:12px;font-size:14px;font-weight:40
   </div>
 </section>
 
-<!-- S15b plan-prompt 5-block formula (text grid only) -->
+<!-- block1 purpose -->
 <section class="scene">
   <div class="bg" style="background:linear-gradient(160deg,#0e1016 0%,#141a26 55%,#1a1420 100%)"></div>
   <div class="inner rv">
-    <span class="kicker">빈칸을 채우면 초안이 달라진다</span>
-    <h2 style="margin-top:12px">계획안 프롬프트 5블록 공식</h2>
-    <p class="lead" style="margin-top:14px;max-width:62ch">지난 이미지 프롬프트 공식과 같은 원리입니다 — 매체만 다를 뿐, 빈칸을 의식할수록 초안이 의도에 가까워집니다.</p>
-    <div class="hints">
-      <div><b>① 목적·배경 (왜)</b><span>하반기 팀 역량강화와 소통 활성화를 위한 1박 2일 워크숍</span></div>
-      <div><b>② 독자·결재선 (누구에게)</b><span>팀장 검토 후 처장 결재 — 예산 타당성이 핵심 판단 포인트</span></div>
-      <div><b>③ 형식·목차 (어떤 꼴로)</b><span>첨부한 표준 양식 목차대로: 개요·일정·예산·추진체계·기대효과</span></div>
-      <div><b>④ 근거 자료 (무엇을 근거로)</b><span>작년 계획안·예산 양식·워크숍 내규 3개 파일을 근거로</span></div>
-      <div><b>⑤ 톤·분량·제약 (어떻게)</b><span>공문체, A4 2장, 내규 상한 준수, 안전관리 계획 필수 포함</span></div>
+    <span class="kicker">계획안 프롬프트 5블록 공식 · 빈칸을 채우면 초안이 달라진다</span>
+    <div class="blkno">①</div>
+    <div class="blkname">목적·배경</div>
+    <div class="blkq">이 칸이 답하는 질문 — 왜 이 문서가 필요한가</div>
+    <p class="blkdef">이 문서가 존재하는 이유와 배경입니다. 첫 문장에 목적이 서면, AI가 기대효과·논리 전체를 그 방향으로 씁니다.</p>
+    <div class="bgpair">
+      <div class="bad"><div class="lbl" style="color:rgba(242,244,236,.5)">나쁜 예 · 빈칸</div><p>&ldquo;워크숍 계획안 써 줘&rdquo;</p></div>
+      <div class="good"><div class="lbl" style="color:var(--blue)">좋은 예 · 채운 칸</div><p>&ldquo;하반기 팀 역량강화와 소통 활성화를 위한 1박 2일 워크숍 계획안&rdquo;</p></div>
     </div>
+    <p class="small" style="margin-top:22px;color:rgba(242,244,236,.62)">실습 팁 — 첫 문장에 &lsquo;왜&rsquo;가 들어가면 AI가 기대효과까지 그 논리로 씁니다.</p>
+  </div>
+</section>
+
+<!-- block2 reader -->
+<section class="scene">
+  <div class="bg" style="background:linear-gradient(155deg,#0e1016 0%,#12161f 50%,#1a1418 100%)"></div>
+  <div class="inner rv">
+    <div class="blkno">②</div>
+    <div class="blkname">독자·결재선</div>
+    <div class="blkq">이 칸이 답하는 질문 — 누구에게 가는가</div>
+    <p class="blkdef">이 문서를 읽고 결재 도장을 찍는 사람입니다. 결재선의 관심사를 지정하면 AI가 그 지점을 앞세워 씁니다.</p>
+    <div class="bgpair">
+      <div class="bad"><div class="lbl" style="color:rgba(242,244,236,.5)">나쁜 예 · 빈칸</div><p>&ldquo;보고서로 써 줘&rdquo;</p></div>
+      <div class="good"><div class="lbl" style="color:var(--blue)">좋은 예 · 채운 칸</div><p>&ldquo;팀장 검토 후 처장 결재 — 예산 타당성이 핵심 판단 포인트&rdquo;</p></div>
+    </div>
+    <p class="small" style="margin-top:22px;color:rgba(242,244,236,.62)">실습 팁 — 읽는 사람이 정해지면 톤과 강조점이 정해집니다.</p>
+  </div>
+</section>
+
+<!-- block3 format -->
+<section class="scene">
+  <div class="bg" style="background:linear-gradient(160deg,#0e1017 0%,#131a24 55%,#141e26 100%)"></div>
+  <div class="inner rv">
+    <div class="blkno">③</div>
+    <div class="blkname">형식·목차</div>
+    <div class="blkq">이 칸이 답하는 질문 — 어떤 꼴로 담는가</div>
+    <p class="blkdef">산출물의 목차·양식·구조를 정하는 칸입니다. 양식 파일을 그대로 주면 목차를 말로 설명하는 것보다 훨씬 정확합니다.</p>
+    <div class="bgpair">
+      <div class="bad"><div class="lbl" style="color:rgba(242,244,236,.5)">나쁜 예 · 빈칸</div><p>&ldquo;보기 좋게 정리해 줘&rdquo;</p></div>
+      <div class="good"><div class="lbl" style="color:var(--blue)">좋은 예 · 채운 칸</div><p>&ldquo;첨부한 표준 양식 목차대로: 개요·일정·예산·추진체계·기대효과&rdquo;</p></div>
+    </div>
+    <p class="small" style="margin-top:22px;color:rgba(242,244,236,.62)">실습 팁 — 양식 파일을 주는 게 목차를 말로 설명하는 것보다 정확합니다.</p>
+  </div>
+</section>
+
+<!-- block4 sources -->
+<section class="scene">
+  <div class="bg" style="background:linear-gradient(150deg,#100f16 0%,#181422 52%,#241620 100%)"></div>
+  <div class="inner rv">
+    <div class="blkno">④</div>
+    <div class="blkname">근거 자료</div>
+    <div class="blkq">이 칸이 답하는 질문 — 무엇을 근거로 쓰는가</div>
+    <p class="blkdef">AI가 참고할 실제 자료입니다. 근거 없이 쓰면 AI는 그럴듯한 평균값을 지어냅니다.</p>
+    <div class="bgpair">
+      <div class="bad"><div class="lbl" style="color:rgba(242,244,236,.5)">나쁜 예 · 빈칸</div><p>&ldquo;잘 아는 대로 써 줘&rdquo;</p></div>
+      <div class="good"><div class="lbl" style="color:var(--blue)">좋은 예 · 채운 칸</div><p>&ldquo;작년 계획안·예산 양식·워크숍 내규 3개 파일을 근거로&rdquo;</p></div>
+    </div>
+    <p class="small" style="margin-top:22px;color:rgba(242,244,236,.62)">실습 팁 — 1장의 &lsquo;말 백 번보다 폴더 하나&rsquo; — 근거를 주면 지어내기가 사라집니다.</p>
+  </div>
+</section>
+
+<!-- block5 constraints -->
+<section class="scene">
+  <div class="bg" style="background:linear-gradient(158deg,#0e1016 0%,#141a26 50%,#241618 100%)"></div>
+  <div class="inner rv">
+    <div class="blkno">⑤</div>
+    <div class="blkname">톤·분량·제약</div>
+    <div class="blkq">이 칸이 답하는 질문 — 어떻게 쓰고 무엇을 지키는가</div>
+    <p class="blkdef">문체·분량·반드시 지킬 규칙을 정합니다. 여기 적은 제약이 곧 검증할 때의 품질 기준이 됩니다.</p>
+    <div class="bgpair">
+      <div class="bad"><div class="lbl" style="color:rgba(242,244,236,.5)">나쁜 예 · 빈칸</div><p>&ldquo;적당히 공식적으로&rdquo;</p></div>
+      <div class="good"><div class="lbl" style="color:var(--blue)">좋은 예 · 채운 칸</div><p>&ldquo;공문체, A4 2장, 내규 상한 준수, 안전관리 계획 필수 포함&rdquo;</p></div>
+    </div>
+    <p class="small" style="margin-top:22px;color:rgba(242,244,236,.62)">실습 팁 — 제약이 곧 품질 기준 — 검증할 때 이 제약과 대조합니다.</p>
   </div>
 </section>
 
@@ -305,14 +381,16 @@ blockquote.bigq .who{display:block;margin-top:12px;font-size:14px;font-weight:40
 <section class="scene">
   <div class="bg" style="background:linear-gradient(155deg,#0e1016 0%,#12161f 50%,#1a1418 100%)"></div>
   <div class="inner rv">
-    <span class="kicker">90분, 다섯 걸음</span>
+    <span class="kicker">90분, 여섯 걸음</span>
     <h2 style="margin-top:12px">오늘의 실습 흐름</h2>
     <div class="rows3">
-      <div class="r"><div class="n">0</div><h3>준비 · 10분</h3><p>FactChat 새 채팅 열기, 모델 Claude Sonnet 5 선택</p></div>
-      <div class="r"><div class="n">1</div><h3>재료로 컨텍스트 채우기 · 15분</h3><p>말 백 번보다 폴더 하나 — 재료 3종을 먼저 올린다</p></div>
-      <div class="r"><div class="n">2</div><h3>5블록 지침 설계 + 초안 · 25분</h3><p>다섯 칸을 채운 지침으로 계획안 초안 받기</p></div>
-      <div class="r"><div class="n">3</div><h3>검증 — 함정 사냥 · 20분</h3><p>휴식 5분 뒤, 8가지 검증법으로 예산·날짜·규정 오류 찾기</p></div>
-      <div class="r"><div class="n">4</div><h3>반복 다듬기 + 하네스 · 15분</h3><p>한 문단씩 고쳐 완성본으로, 지침은 다음에 쓸 틀로 저장</p></div>
+      <div class="r"><div class="n">0</div><h3>준비 · 8분</h3><p>FactChat 새 채팅 열기, 모델 Claude Sonnet 5 선택</p></div>
+      <div class="r"><div class="n">1</div><h3>재료로 컨텍스트 채우기 · 12분</h3><p>말 백 번보다 폴더 하나 — 재료 3종을 먼저 올린다</p></div>
+      <div class="r"><div class="n">2</div><h3>5블록 지침 → 마크다운 초안 · 22분</h3><p>다섯 칸을 채운 지침으로 계획안 초안을 마크다운으로 받기</p></div>
+      <div class="r"><div class="n" style="font-size:clamp(20px,1.6vw,26px);color:rgba(242,244,236,.4)">휴식</div><h3 style="color:rgba(242,244,236,.7)">5분</h3><p>검증에 들어가기 전, 잠깐 눈을 식힙니다</p></div>
+      <div class="r"><div class="n">3</div><h3>검증 — 함정 사냥 · 18분</h3><p>8가지 검증법으로 예산·날짜·규정 오류 찾기</p></div>
+      <div class="r"><div class="n">4</div><h3>반복 다듬기 → ① 정식 보고서 · 13분</h3><p>한 문단씩 고쳐 완성본으로, 지침은 다음에 쓸 하네스로 저장</p></div>
+      <div class="r"><div class="n">5</div><h3>산출물 확장 · 12분</h3><p>재료 ④ 가이드라인 첨부 → ③ 1페이지(전원) · ② 발표자료(시연·선택)</p></div>
     </div>
   </div>
 </section>
@@ -330,6 +408,7 @@ blockquote.bigq .who{display:block;margin-top:12px;font-size:14px;font-weight:40
       <div><h3>워크숍 내규 요약</h3><p>예산 상한·안전관리·복무 규정</p><div class="ex">→ 지켜야 할 제약</div></div>
     </div>
     <div class="prep">세 파일 모두 오늘 실습용 <em>가상 자료</em>입니다. 실제 업무엔 부서의 진짜 양식·규정·지난 결과물을 그대로 올리면 됩니다.</div>
+    <p class="small" style="margin-top:14px;color:#aecdf0">재료 ④ 디자인 가이드라인은 STEP 5에서 씁니다.</p>
   </div>
 </section>
 
@@ -352,6 +431,73 @@ blockquote.bigq .who{display:block;margin-top:12px;font-size:14px;font-weight:40
       </div>
       <p class="small" style="margin-top:12px;color:rgba(242,244,236,.6)">숫자·날짜·규정 인용은 반드시 원본 재료와 눈으로 대조합니다. AI에게 "네가 쓴 근거를 재료에서 다시 확인해 줘"라고 되물으세요.</p>
     </div>
+  </div>
+</section>
+
+<!-- markdown scene -->
+<section class="scene">
+  <div class="bg" style="background:linear-gradient(160deg,#0e1016 0%,#131a24 55%,#141e26 100%)"></div>
+  <div class="inner rv">
+    <span class="kicker">STEP 2 · 완성본의 형식</span>
+    <h2 style="margin-top:12px">완성본은 마크다운으로</h2>
+    <p class="lead" style="margin-top:14px;max-width:56ch">계획안 초안을 받을 때부터 &lsquo;마크다운으로 정리해 줘&rsquo;라고 붙이세요. 뒤에 무엇으로든 바꿀 수 있는 형식입니다.</p>
+    <div class="chips">
+      <div><div class="k">① AI의 공용어</div><b>기본 출력</b><p>ChatGPT·Claude·Gemini 모두 마크다운으로 답합니다</p></div>
+      <div><div class="k">② 곧 문서 뼈대</div><b>#·표·목록</b><p>세 요소가 그대로 제목·표·항목이 됩니다</p></div>
+      <div><div class="k">③ 어디로든 변환</div><b>워드·한글·PPT</b><p>같은 원본 하나로 어떤 형식으로도 바뀝니다</p></div>
+    </div>
+    <blockquote class="bigq" style="max-width:44ch;font-size:clamp(20px,2vw,30px)">&ldquo;완성한 계획안을 마크다운으로 정리해 줘 — 대제목 #, 일정·예산은 표, 항목은 목록으로.&rdquo;</blockquote>
+    <p class="small" style="margin-top:20px">어려운 게 아닙니다 — <b style="color:var(--paper)">#</b> · <b style="color:var(--paper)">|</b> · <b style="color:var(--paper)">-</b> 세 기호면 됩니다.</p>
+  </div>
+</section>
+
+<!-- design guideline = harness scene -->
+<section class="scene">
+  <div class="bg" style="background:linear-gradient(155deg,#100f16 0%,#181422 52%,#241620 100%)"></div>
+  <div class="inner split">
+    <div class="rv">
+      <span class="kicker">STEP 5 · 재사용 자산</span>
+      <h2 style="margin-top:12px">디자인 가이드라인<br>= 나의 하네스</h2>
+      <div class="keys" style="margin-top:28px">
+        <span>색·글꼴</span><span>문체·톤</span><span>표기 규칙</span><span>표 서식</span><span>산출물별 형식</span>
+      </div>
+      <p class="prep" style="max-width:46ch">가이드라인에 담는 것 — 반복해서 지키고 싶은 규칙을 한 파일에 모읍니다.</p>
+    </div>
+    <div class="rv">
+      <div class="defbox" style="max-width:34ch;font-size:clamp(19px,1.9vw,28px)">1장에서 배운 하네스 — 실수는 지침에 적어 재발을 막는다. 문서 버전이 바로 이 파일입니다.</div>
+      <p class="lead" style="margin-top:20px;max-width:42ch">다음 문서부터는 <b style="color:var(--paper)">이 파일 하나만 첨부하면, 같은 품질.</b></p>
+      <p class="small" style="margin-top:22px;color:rgba(242,244,236,.6)">사람은 방향(가이드라인)을 잡고, AI가 산출물을 실행합니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- outputs 3 kinds scene -->
+<section class="scene">
+  <div class="bg" style="background:linear-gradient(160deg,#0e1016 0%,#141a26 50%,#1a1420 100%)"></div>
+  <div class="inner rv">
+    <span class="kicker">STEP 4~5 · 산출물 3종</span>
+    <h2 style="margin-top:12px">마크다운 하나로<br>세 가지 산출물</h2>
+    <div class="tri">
+      <div class="b">
+        <div class="n">①</div>
+        <h3>정식 보고서</h3>
+        <p>공문체 A4 — 표준 양식 목차대로. STEP 4에서 완성한 결과물입니다.</p>
+        <div class="hint" style="color:#aecdf0">전원 · 오늘의 결과물</div>
+      </div>
+      <div class="b">
+        <div class="n">②</div>
+        <h3>발표자료</h3>
+        <p>장표별 제목 + 3불릿, 6~8장. FactChat 프레젠테이션 에이전트로 바로 초안을 만들 수 있습니다.</p>
+        <div class="hint" style="color:#aecdf0">시연 · 선택</div>
+      </div>
+      <div class="b hot">
+        <div class="n">③</div>
+        <h3>1페이지 보고서</h3>
+        <p>처장 보고용 요약 한 장. STEP 5의 주인공 — 12분 안에 함께 만듭니다.</p>
+        <div class="hint">전원 · 12분의 주인공</div>
+      </div>
+    </div>
+    <p class="small" style="margin-top:28px">마크다운 원본 하나 + 가이드라인 하나 = <b style="color:var(--paper)">세 가지 산출물.</b></p>
   </div>
 </section>
 
